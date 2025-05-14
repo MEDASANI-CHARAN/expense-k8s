@@ -45,7 +45,7 @@ spec:
               value: ExpenseApp@1
         envFrom:
         - configMapRef:
-        name: backend
+          name: backend
 
 ---
 
