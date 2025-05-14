@@ -23,9 +23,9 @@ spec:
     metadata:
       labels:
         project: expense
-    component: mysql
-    environment: dev
-    tier: db
+        component: mysql
+        environment: dev
+        tier: db
     spec:
       containers:
       - name: nginx
