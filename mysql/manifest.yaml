@@ -28,5 +28,5 @@ spec:
         tier: db
     spec:
       containers:
-      - name: nginx
-        image: nginx:stable-otel
+      - name: mysql
+        image: charan466/mysql:1.0.0
