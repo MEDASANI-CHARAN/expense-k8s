@@ -39,7 +39,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: charan466 backend:1.0.0
+        image: charan466/backend:1.0.0
         env:
             - name: backend_ROOT_PASSWORD
               value: ExpenseApp@1
