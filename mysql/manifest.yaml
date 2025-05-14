@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql
+  namespace: expense
   # these labels belongs to deplyment resource
   labels:
     project: expense
@@ -10,19 +11,21 @@ metadata:
     tier: db
 spec:
   # modify replicas according to your case
-  replicas: 3
+  replicas: 20
   selector:
     matchLabels:
-      tier: deployment
-      app: nginx
+      project: expense
+      component: mysql
+      environment: dev
+      tier: db
     # below is the pod defination
   template:
     metadata:
       labels:
-        tier: deployment
-        app: nginx
-        project: some-project
-        extra-key: extra-value
+        project: expense
+    component: mysql
+    environment: dev
+    tier: db
     spec:
       containers:
       - name: nginx
