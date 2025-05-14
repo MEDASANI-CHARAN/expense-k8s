@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+  # these labels belongs to deplyment resource
+  labels:
+    project: expense
+    component: mysql
+    environment: dev
+    tier: db
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: deployment
+      app: nginx
+    # below is the pod defination
+  template:
+    metadata:
+      labels:
+        tier: deployment
+        app: nginx
+        project: some-project
+        extra-key: extra-value
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:stable-otel
