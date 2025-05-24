@@ -43,9 +43,9 @@ metadata:
   namespace: expense
 spec:
   selector:
-    project: expense11
-    component: mysql11
-    environment: dev11
+    project: expense
+    component: mysql
+    environment: dev
     tier: db11
   ports:
   - protocol: TCP
