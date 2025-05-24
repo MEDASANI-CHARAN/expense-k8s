@@ -43,10 +43,10 @@ metadata:
   namespace: expense
 spec:
   selector:
-    project: expense
-    component: mysql
-    environment: dev
-    tier: db
+    project: expense11
+    component: mysql11
+    environment: dev11
+    tier: db11
   ports:
   - protocol: TCP
     port: 3306 #service-port
