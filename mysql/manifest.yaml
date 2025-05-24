@@ -5,10 +5,10 @@ metadata:
   namespace: expense
   # these labels belongs to deplyment resource
   labels:
-    project: expense
-    component: mysql
-    environment: dev
-    tier: db
+    project: expense11
+    component: mysql11
+    environment: dev11
+    tier: db11
 spec:
   # modify replicas according to your case
   replicas: 2
@@ -43,10 +43,10 @@ metadata:
   namespace: expense
 spec:
   selector:
-    project: expense11
-    component: mysql11
-    environment: dev11
-    tier: db11
+    project: expense
+    component: mysql
+    environment: dev
+    tier: db
   ports:
   - protocol: TCP
     port: 3306 #service-port
