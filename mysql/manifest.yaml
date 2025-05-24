@@ -46,7 +46,7 @@ spec:
     project: expense11
     component: mysql11
     environment: dev11
-    tier: db
+    tier: db11
   ports:
   - protocol: TCP
     port: 3306 #service-port
